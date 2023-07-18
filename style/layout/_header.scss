@@ -1,0 +1,14 @@
+
+
+.header{
+  background-color: $title-darck-color;
+  &_logo{
+    h1{
+      font-family: $title-font;
+      color: $main-light-color;
+      font-size: $logo-font-size;
+      line-height: $line-height;
+      letter-spacing: 2px;
+    }
+  }
+}

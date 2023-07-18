@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.header {
+  background-color: #0C0C0E;
+}
+.header_logo h1 {
+  font-family: "Forum", cursive;
+  color: #FFFFFF;
+  font-size: 3rem;
+  letter-spacing: 2%;
+}
+
+/*# sourceMappingURL=main.css.map */
