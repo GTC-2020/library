@@ -1,0 +1,26 @@
+.welcome{
+  background-image: url(/library/images/content/Welcome.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 220px;
+  padding-bottom: 160px;
+
+  &_title{
+    background-color: $title-darck-color;
+    width: 41.67%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 94px;
+    padding-right: 120px;
+    text-align: center;
+    h2{
+      @include font($title-font,$main-light-color);
+      font-size: 4em;
+      line-height: $line-height;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  }
+}
