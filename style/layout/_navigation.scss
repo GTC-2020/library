@@ -1,0 +1,13 @@
+.naviagtion{
+  display: flex;
+  align-items: center;
+  ul{
+    display: flex;
+    gap: 3em;
+  }
+  li{
+    display: inline-block;
+    @include font($main-font, $main-light-color);
+    font-size: 2em;
+  }
+}
