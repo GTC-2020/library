@@ -12,10 +12,9 @@
   &_logo{
     margin-right: 32.43%;
     h1{
-      @include font($title-font,$main-light-color);
-      font-size:$logo-font-size;
-      line-height: $line-height;
+      @include font($title-font,30px,$main-light-color);
       letter-spacing: 0.02em;
+      line-height: 50px;
     }
   }
   &_profile{

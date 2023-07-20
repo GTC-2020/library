@@ -16,8 +16,7 @@
     padding-right: 120px;
     text-align: center;
     h2{
-      @include font($title-font,$main-light-color);
-      font-size: 4em;
+      @include font($title-font,4em,$main-light-color);
       line-height: $line-height;
       letter-spacing: 3px;
       text-transform: uppercase;

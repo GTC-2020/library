@@ -1,0 +1,18 @@
+.about_acordion_button{
+  width: 26px;
+  height: 26px;
+  padding-left: 4px;
+  cursor: pointer;
+  .button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $title-darck-color;
+    cursor: pointer;
+    border: none;
+    &-active{
+      background-color: $brand-color;
+    }
+  }
+
+}

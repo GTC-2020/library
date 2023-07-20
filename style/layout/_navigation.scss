@@ -7,7 +7,6 @@
   }
   li{
     display: inline-block;
-    @include font($main-font, $main-light-color);
-    font-size: 2em;
+    @include font($main-font,2em, $main-light-color);
   }
 }

@@ -13,6 +13,11 @@ h1, h2 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -53,11 +58,11 @@ ul {
 }
 .header_logo h1 {
   font-family: "Forum", cursive;
+  font-size: 30px;
   font-weight: 400;
   color: #FFFFFF;
-  font-size: 30px;
-  line-height: 50px;
   letter-spacing: 0.02em;
+  line-height: 50px;
 }
 .header_profile {
   width: 28px;
@@ -81,9 +86,9 @@ ul {
 .naviagtion li {
   display: inline-block;
   font-family: "Inter", sans-serif;
+  font-size: 2em;
   font-weight: 400;
   color: #FFFFFF;
-  font-size: 2em;
 }
 
 .welcome {
@@ -106,12 +111,73 @@ ul {
 }
 .welcome_title h2 {
   font-family: "Forum", cursive;
+  font-size: 4em;
   font-weight: 400;
   color: #FFFFFF;
-  font-size: 4em;
   line-height: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.about_acordion_button {
+  width: 26px;
+  height: 26px;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.about_acordion_button .button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0C0C0E;
+  cursor: pointer;
+  border: none;
+}
+.about_acordion_button .button-active {
+  background-color: #BB945F;
+}
+
+.about {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.about_title {
+  font-family: "Forum", cursive;
+  font-size: 4em;
+  font-weight: 400;
+  color: #0C0C0E;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+.about_title::after {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #0C0C0E;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 25px);
+}
+.about_text {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: #000000;
+  line-height: 4em;
+  text-align: center;
+  margin-top: 40px;
+}
+.about_acordion_container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.about_acordion_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
