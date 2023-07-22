@@ -1,23 +1,4 @@
 .about{
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-  &_title{
-     @include font($title-font,4em,$title-darck-color);
-     letter-spacing: 2px;
-     text-align: center;
-     line-height: 40px;
-     position: relative;
-     &::after{
-      content: '';
-      height: 1px;
-      width: 50px;
-      background-color: $title-darck-color;
-      position: absolute;
-      bottom: -20px;
-      left:calc(50% - 25px);
-     }
-  }
   &_text{
     @include font($main-font,2em,$main-darck-color);
     line-height: 4em;
@@ -28,10 +9,17 @@
     display: flex;
     gap: 25px;
     margin-bottom: 40px;
+
   }
   &_acordion_buttons{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  &_acordion_item{
+    width: 32.1%;
+    img{
+      width: 100%;
+    }
   }
 }

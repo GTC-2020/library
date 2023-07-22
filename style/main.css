@@ -8,7 +8,7 @@ body {
   font-size: 10px;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
 }
@@ -42,6 +42,37 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+}
+
+h2 {
+  font-family: "Forum", cursive;
+  font-size: 4em;
+  font-weight: 400;
+  color: #0C0C0E;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  text-transform: capitalize;
+}
+h2::after {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #0C0C0E;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 25px);
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+label {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -121,7 +152,7 @@ ul {
 
 .about_acordion_button {
   width: 26px;
-  height: 26px;
+  height: 16px;
   padding-left: 4px;
   cursor: pointer;
 }
@@ -137,29 +168,6 @@ ul {
   background-color: #BB945F;
 }
 
-.about {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-.about_title {
-  font-family: "Forum", cursive;
-  font-size: 4em;
-  font-weight: 400;
-  color: #0C0C0E;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 40px;
-  position: relative;
-}
-.about_title::after {
-  content: "";
-  height: 1px;
-  width: 50px;
-  background-color: #0C0C0E;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 25px);
-}
 .about_text {
   font-family: "Inter", sans-serif;
   font-size: 2em;
@@ -178,6 +186,154 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.about_acordion_item {
+  width: 32.1%;
+}
+.about_acordion_item img {
+  width: 100%;
+}
+
+.favorites_chose {
+  padding-top: 60px;
+}
+.favorites_chose_title {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.favorites_chose_variants {
+  padding-bottom: 40px;
+}
+.favorites_chose_variants label {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  display: inline-block;
+  margin-right: 90px;
+}
+.favorites_chose_variants input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+}
+.favorites_chose_variants .custom-radio {
+  position: relative;
+  padding-left: 37px;
+  cursor: pointer;
+}
+.favorites_chose_variants .custom-radio::before {
+  content: "";
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  transform: translateY(5px);
+  left: 0;
+}
+.favorites_chose_variants input[type=radio]:checked + .custom-radio::before {
+  background-color: #000000;
+  border-color: #000000;
+}
+.favorites_cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.favorites_cards_item {
+  display: flex;
+  border: 1px solid #000000;
+  height: 555px;
+  margin-right: 260px;
+  margin-bottom: 40px;
+}
+.favorites_cards_item:nth-child(2n) {
+  margin-right: 0;
+}
+.favorites_cards_item_content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.favorites_cards_item_content h3 {
+  font-family: "Forum", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 20px;
+}
+.favorites_cards_item_content h3::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #BB945F;
+  position: absolute;
+  left: 0;
+  top: 39px;
+}
+.favorites_cards_item_content h4, .favorites_cards_item_content h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+.favorites_cards_item_content h4 {
+  text-transform: uppercase;
+}
+.favorites_cards_item_content h5 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.favorites_cards_item_content p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-right: 15px;
+  margin-bottom: auto;
+  width: 355px;
+}
+.favorites_cards_item_content_button {
+  width: 75px;
+  height: 30px;
+  display: block;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #0C0C0E;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.favorites_cards_item_image {
+  display: flex;
+  align-items: flex-end;
+  margin-right: -40px;
+}
+.favorites_cards_item_image img {
+  display: block;
+}
+.favorites .active {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,127 @@
+.favorites{
+  &_chose{
+    padding-top: 60px;
+    &_title{
+      @include font($main-font,20px,$main-darck-color);
+      font-weight: 700;
+      margin-bottom: 40px
+    }
+    &_variants{
+      padding-bottom: 40px;
+      label{
+        @include font($main-font,20px,$main-darck-color);
+        display: inline-block;
+        margin-right: 90px;
+      }
+      input[type="radio"]{
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(5px);
+      }
+      .custom-radio{
+        position: relative;
+        padding-left: 37px;
+        cursor: pointer;
+      }
+      .custom-radio::before{
+        content: "";
+        border: 2px solid $main-darck-color;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        transform: translateY(5px);
+        left: 0;
+      }
+      input[type="radio"]:checked + .custom-radio::before {
+        background-color: $main-darck-color;
+        border-color: $main-darck-color;
+      }
+      
+    }
+  }
+  &_cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &_item{
+      display: flex;
+      border: 1px solid $main-darck-color;
+      height: 555px;
+      margin-right: 260px;
+      margin-bottom: 40px;
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+      &_content{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        h3{
+          @include font($title-font,20px, $main-darck-color);
+          line-height: 40px;
+          letter-spacing: 2px;
+          text-transform: capitalize;
+          position: relative;
+          margin-bottom: 20px;
+          &::after{
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: $brand-color;
+            position: absolute;
+            left: 0;
+            top:39px;
+          }
+        }
+        h4,h5{
+          @include font($main-font,15px,$main-darck-color);
+          font-weight:700;
+          line-height: 40px;
+          letter-spacing: 2px;
+        }
+        h4{
+          text-transform: uppercase;
+        }
+        h5{
+          text-transform: capitalize;
+          margin-bottom: 20px;
+        }
+        p{
+          @include font($main-font,15px,$main-darck-color);
+          line-height: 40px;
+          letter-spacing: 2px;
+          text-transform: capitalize;
+          margin-right: 15px;
+          margin-bottom: auto;
+          width: 355px;
+        }
+        &_button{
+          width: 75px;
+          height: 30px;
+          display: block;
+          background: transparent;
+          @include font($main-font,10px,$title-darck-color);
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-align: center;
+
+        }
+      }
+      &_image{
+        display: flex;
+        align-items: flex-end;
+        margin-right: -40px;
+        img{
+          display: block;
+        }
+      }
+    }
+  }
+  .active{
+    font-weight: 700;
+  }
+}
