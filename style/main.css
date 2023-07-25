@@ -256,6 +256,9 @@ label {
 .favorites_cards_item:nth-child(2n) {
   margin-right: 0;
 }
+.favorites_cards_item:nth-child(3), .favorites_cards_item:nth-child(4) {
+  margin-bottom: 0;
+}
 .favorites_cards_item_content {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -323,6 +326,17 @@ label {
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
+  cursor: pointer;
+}
+.favorites_cards_item_content_button:hover {
+  background-color: #BB945F;
+  border: 2px solid #BB945F;
+  transition: all 0.5s;
+}
+.favorites_cards_item_content_button-active {
+  border: 2px solid #BB945F;
+  color: #BB945F;
+  pointer-events: none;
 }
 .favorites_cards_item_image {
   display: flex;
@@ -334,6 +348,33 @@ label {
 }
 .favorites .active {
   font-weight: 700;
+}
+
+.coffeshop_title {
+  margin-bottom: 60px;
+}
+.coffeshop_text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.coffeshop_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.coffeshop_menu_title {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: #BB945F;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=main.css.map */

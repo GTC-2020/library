@@ -54,6 +54,10 @@
     &:nth-child(2n){
       margin-right: 0;
     }
+    &:nth-child(3),
+    &:nth-child(4){
+      margin-bottom: 0;
+    }
       &_content{
         padding-top: 15px;
         padding-bottom: 15px;
@@ -108,7 +112,17 @@
           font-weight: 700;
           letter-spacing: 1px;
           text-align: center;
-
+          cursor: pointer;
+          &:hover{
+            background-color: $brand-color;
+            border: 2px solid $brand-color;
+            transition:all .5s;
+          }
+        }
+        &_button-active{
+          border:2px solid $brand-color;
+          color: $brand-color;
+          pointer-events: none;
         }
       }
       &_image{
